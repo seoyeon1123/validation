@@ -50,4 +50,10 @@ public class MessageSourceTest {
     void enLang() {
         assertThat(ms.getMessage("hello", null, Locale.ENGLISH)).isEqualTo("hello");
     }
+
+    //업데이트 테스트 코드 추가
+    @Test
+    void message(){
+        assertThat(ms.getMessage("hello", null, Locale.ENGLISH)).isEqualTo("hello");
+    }
 }
